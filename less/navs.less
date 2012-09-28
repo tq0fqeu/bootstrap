@@ -42,7 +42,30 @@
   margin-top: 9px;
 }
 
+// NAV BOLD
+.nav-bold > li > a {
+  font-weight: 800;
+}
 
+// NAV MENU
+#nav-menu > li > a {
+  font-size: 12px;
+  color: #ffffff;
+  padding: ((@navbarHeight - @baseLineHeight) / 5)  10px ((@navbarHeight - @baseLineHeight) / 5);
+  margin-top: 9px;
+  text-shadow: none;
+}
+
+#nav-menu > li > a:hover,
+#nav-menu > li.active > a {
+    color: @white;
+}
+
+#nav-menu > li.divider-vertical {
+  border-left-color: lighten(@navbarBrandColor, 15%);
+  height: @navbarHeight * 0.4;
+  margin: @navbarHeight * 0.3 5px @navbarHeight * 0.3 4px;
+}
 
 // NAV LIST
 // --------

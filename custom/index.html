@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>custom bootstrap</title>
     <style>
@@ -11,38 +11,49 @@
     <link rel="stylesheet/less" href="../less/bootstrap.less" />
     <link rel="stylesheet/less" href="../less/responsive.less" />
     <script src="../less.js"></script>
-    <link rel="shortcut icon" href="../../docs/assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../docs/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../docs/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../docs/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../../docs/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../favicon.ico">
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
-           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-           <a class="brand" href="#"><img src="../img/logo.png" alt="TOAST"/></a>
-           <div class="nav-collapse collapse">
-             <ul class="nav">
-               <li class="active"><a href="#">中文</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+          <a class="brand" href="#"><img src="../img/logo.png" alt="TOAST"/></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav nav-bold">
+              <li class="active"><a href="#task">任务</a></li>
+              <li><a href="#case">用例</a></li>
+              <li><a href="#machine">测试机</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav nav-pills" id="nav-menu">
+              <li class="active"><a href="#user">焦霸</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#admin">后台管理</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#logout">注销</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span3">Level 2</div>
+            <div class="span9">Level 2</div>
+          </div>
+        </div>
+      </div>
     </div>
-      
+
     <script src="../docs/assets/js/jquery.js"></script>
     <script src="../docs/assets/js/google-code-prettify/prettify.js"></script>
     <script src="../docs/assets/js/bootstrap-transition.js"></script>
@@ -58,5 +69,5 @@
     <script src="../docs/assets/js/bootstrap-carousel.js"></script>
     <script src="../docs/assets/js/bootstrap-typeahead.js"></script>
     <script src="../docs/assets/js/bootstrap-affix.js"></script>
-</body>
+  </body>
 </html>
